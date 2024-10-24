@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define TOLERANCE 1
+
 int main(void)
 {
   
