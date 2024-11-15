@@ -36,3 +36,4 @@ if [ $? -eq 0 ]; then
 else
     echo "Błąd podczas kompilacji."
 fi
+
