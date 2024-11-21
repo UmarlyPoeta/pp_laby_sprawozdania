@@ -8,7 +8,7 @@
 
 int main( void ) // program kopiowania z stdin na stdout
 {
-    /*
+    
     srand(time(NULL));
   int c;
   c = getchar();
@@ -101,7 +101,7 @@ int main( void ) // program kopiowania z stdin na stdout
         printf("The arrays are not equal.\n");
     }
 
-    */
+    
   //-------------------------------- 4.0 ------------------------------------
 
   // 8. Napisanie kodu tworzenia tablicy o okreslonej dĹugoĹci i wypeĹniania
