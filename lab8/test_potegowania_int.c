@@ -17,11 +17,11 @@ int main (void)
   for (i = 1; i < 20; i++) {
     wspolczynniki[i] = i + 1;
   }
-  int stopien = 20; 
+  int stopien = 4; 
   int x = 2; 
   printf("Wartość wielomianu dla x = %d: %d\n", x, oblicz_wielomian_int_Horner(wspolczynniki, stopien, x));
 
-  for (i = 0; i < 1000000; i++) {
+  for (i = 0; i < 100; i++) {
     oblicz_wielomian_int_Horner(wspolczynniki, stopien, x);
   }
 
@@ -49,7 +49,7 @@ int oblicz_wielomian_int_Horner(int *a, int stopien, int x)
   int wynik = a[stopien];
   for (int i = stopien - 1; i >= 0; i--) {
     if (wynik > (INT_MAX - a[i]) / x) {
-      printf("Przekroczenie zakresu INT_MAX\n");
+      printf("Przekroczenie zakresu INT_MAX");
       return INT_MAX;
     }
     wynik = wynik * x + a[i];
