@@ -17,4 +17,4 @@ clean:
 
 # Run the program
 run: $(TARGET)
-	./$(TARGET)
+	./$(TARGET) 4 5
